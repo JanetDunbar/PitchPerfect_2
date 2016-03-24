@@ -29,5 +29,9 @@ class ViewController: UIViewController {
     @IBAction func stopRecording(sender: UIButton) {
         print("stop recording button pressed")
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        print("viewWillAppear called")
+    }
 }
 
