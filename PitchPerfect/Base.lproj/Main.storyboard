@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Record Sounds View Controller-->
@@ -71,7 +72,18 @@
                     <view key="view" contentMode="scaleToFill" id="OqL-A0-0kM">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SOq-6W-x5J">
+                                <rect key="frame" x="20" y="64" width="560" height="536"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SOq-6W-x5J" firstAttribute="leading" secondItem="OqL-A0-0kM" secondAttribute="leadingMargin" id="0H0-dD-3rZ"/>
+                            <constraint firstItem="SOq-6W-x5J" firstAttribute="top" secondItem="7b3-nZ-GZM" secondAttribute="bottom" id="B3b-OF-OMb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SOq-6W-x5J" secondAttribute="trailing" id="UFQ-59-LcZ"/>
+                            <constraint firstItem="IJD-xu-Jwq" firstAttribute="top" secondItem="SOq-6W-x5J" secondAttribute="bottom" id="qR0-Vv-NW7"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZRL-5O-2lf" userLabel="First Responder" sceneMemberID="firstResponder"/>
