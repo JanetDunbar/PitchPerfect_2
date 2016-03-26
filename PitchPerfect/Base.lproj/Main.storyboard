@@ -77,15 +77,28 @@
                                 <rect key="frame" x="20" y="64" width="560" height="536"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="O7l-Xi-vJW">
-                                        <rect key="frame" x="0.0" y="0.0" width="560" height="536"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="268"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enb-3R-QzM" userLabel="snailButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="280" height="536"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="268"/>
                                                 <state key="normal" image="snailButton"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrV-wv-hNj" userLabel="rabbitButton">
-                                                <rect key="frame" x="280" y="0.0" width="280" height="536"/>
-                                                <state key="normal" title="Button" image="rabbitButton"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmT-uG-fVL" userLabel="rabbitButton">
+                                                <rect key="frame" x="280" y="0.0" width="280" height="268"/>
+                                                <state key="normal" image="rabbitButton"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HrM-uX-fnR">
+                                        <rect key="frame" x="0.0" y="268" width="560" height="268"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2s-2F-3Zm" userLabel="chipmunkButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="280" height="268"/>
+                                                <state key="normal" image="chipmunkButton"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QZQ-Lc-6w0">
+                                                <rect key="frame" x="280" y="0.0" width="280" height="268"/>
+                                                <state key="normal" image="vaderButton"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -125,9 +138,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chipmunkButton" width="100" height="100"/>
         <image name="rabbitButton" width="100" height="100"/>
         <image name="recordButton" width="100" height="100"/>
         <image name="snailButton" width="100" height="100"/>
         <image name="stopRecordingButton" width="50" height="50"/>
+        <image name="vaderButton" width="100" height="100"/>
     </resources>
 </document>
