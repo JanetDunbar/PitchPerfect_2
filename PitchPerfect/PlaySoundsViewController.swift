@@ -19,6 +19,15 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
+    @IBAction func playSoundForButton(sender: UIButton){
+        print("** Inside playSoundForButton func **")
+    }
+    
+    @IBAction func stopButtonPressed(sender: UIButton){
+        print("** Inside stopButtonPressed func **")
+    }
+
+    
     var recordedAudio: NSURL!
     
     override func viewDidLoad() {
