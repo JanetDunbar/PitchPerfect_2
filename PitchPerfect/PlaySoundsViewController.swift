@@ -38,8 +38,11 @@ class PlaySoundsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("recordedAudioURL = \(recordedAudioURL)")
-
-        // Do any additional setup after loading the view.
+        setupAudio()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        configureUI(.NotPlaying)
     }
 
     override func didReceiveMemoryWarning() {
