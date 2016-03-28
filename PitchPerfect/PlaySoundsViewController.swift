@@ -19,6 +19,14 @@ class PlaySoundsViewController: UIViewController {
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var stopButton: UIButton!
     
+    var recordedAudioURL: NSURL!
+    var audioFile: AVAudioFile!
+    var audioEngine: AVAudioEngine!
+    var audioPlayerNode: AVAudioPlayerNode!
+    var stopTimer: NSTimer!
+    
+    enum buttonType: Int { case Slow = 0, Fast, Chipmunk, Vader, Echo, Reverb }
+    
     @IBAction func playSoundForButton(sender: UIButton){
         print("** Inside playSoundForButton func **")
     }
@@ -26,13 +34,10 @@ class PlaySoundsViewController: UIViewController {
     @IBAction func stopButtonPressed(sender: UIButton){
         print("** Inside stopButtonPressed func **")
     }
-
-    
-    var recordedAudio: NSURL!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("recordedAudio = \(recordedAudio)")
+        print("recordedAudioURL = \(recordedAudioURL)")
 
         // Do any additional setup after loading the view.
     }
